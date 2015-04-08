@@ -1,0 +1,80 @@
+<root name="Assets\NGUI\Examples\Scenes\Example 11 - Drag &amp; Drop.unity">
+  <gameObject name="renderSettings" fog="false" fogMode="3" fogDensity="0.01" fogStartDistance="0" fogEndDistance="300" fogColor_r="0.5" fogColor_g="0.5" fogColor_b="0.5" fogColor_a="1" ambientLight_r="0.2" ambientLight_g="0.2" ambientLight_b="0.2" ambientLight_a="1" haloStrength="0.5" flareStrength="1" skybox="" />
+  <gameObject name="world" wname="Example 11 - Drag &amp; Drop" />
+  <gameObject name="Stage" id="10" layer="Default" loadPri="99" load="0" unload="0" asset="streaming_Example_11_-_Drag_&amp;_Drop_Stage.9.unity3d">
+    <transform>
+      <position>
+        <x>0.9815813</x>
+        <y>-0.1016154</y>
+        <z>0</z>
+      </position>
+      <rotation>
+        <x>0</x>
+        <y>342.0213</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>1</y>
+        <z>1</z>
+      </scale>
+    </transform>
+  </gameObject>
+  <gameObject name="Directional light" id="12" layer="Default" loadPri="99" load="0" unload="0" asset="streaming_Example_11_-_Drag_&amp;_Drop_Directional_light.11.unity3d">
+    <transform>
+      <position>
+        <x>0.01333904</x>
+        <y>0.6579456</y>
+        <z>-2.616471</z>
+      </position>
+      <rotation>
+        <x>5.6706</x>
+        <y>54.67356</y>
+        <z>286.348</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>1</y>
+        <z>1</z>
+      </scale>
+    </transform>
+  </gameObject>
+  <gameObject name="UI Root (2D)" id="14" layer="ui" loadPri="99" load="0" unload="0" asset="streaming_Example_11_-_Drag_&amp;_Drop_UI_Root_(2D).13.unity3d">
+    <transform>
+      <position>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </position>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>0.003448276</x>
+        <y>0.003448276</y>
+        <z>0.003448276</z>
+      </scale>
+    </transform>
+  </gameObject>
+  <gameObject name="Main Camera" id="16" layer="Default" loadPri="99" load="0" unload="0" asset="streaming_Example_11_-_Drag_&amp;_Drop_Main_Camera.15.unity3d">
+    <transform>
+      <position>
+        <x>0</x>
+        <y>1.891149</y>
+        <z>-2.589724</z>
+      </position>
+      <rotation>
+        <x>39.35271</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>1</y>
+        <z>1</z>
+      </scale>
+    </transform>
+  </gameObject>
+</root>

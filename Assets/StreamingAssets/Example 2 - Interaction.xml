@@ -1,0 +1,61 @@
+<root name="Assets\NGUI\Examples\Scenes\Example 2 - Interaction.unity">
+  <gameObject name="renderSettings" fog="false" fogMode="3" fogDensity="0.01" fogStartDistance="0" fogEndDistance="300" fogColor_r="0.5" fogColor_g="0.5" fogColor_b="0.5" fogColor_a="1" ambientLight_r="0.2" ambientLight_g="0.2" ambientLight_b="0.2" ambientLight_a="1" haloStrength="0.5" flareStrength="1" skybox="" />
+  <gameObject name="world" wname="Example 2 - Interaction" />
+  <gameObject name="Message Root" id="24" layer="Default" loadPri="99" load="0" unload="0" asset="streaming_Example_2_-_Interaction_Message_Root.23.unity3d">
+    <transform>
+      <position>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </position>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>1</y>
+        <z>1</z>
+      </scale>
+    </transform>
+  </gameObject>
+  <gameObject name="Directional light" id="26" layer="Default" loadPri="99" load="0" unload="0" asset="streaming_Example_2_-_Interaction_Directional_light.25.unity3d">
+    <transform>
+      <position>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </position>
+      <rotation>
+        <x>30.32216</x>
+        <y>18.31854</y>
+        <z>358.3877</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>1</y>
+        <z>1</z>
+      </scale>
+    </transform>
+  </gameObject>
+  <gameObject name="Main Camera" id="28" layer="Default" loadPri="99" load="0" unload="0" asset="streaming_Example_2_-_Interaction_Main_Camera.27.unity3d">
+    <transform>
+      <position>
+        <x>0</x>
+        <y>0</y>
+        <z>-1.5</z>
+      </position>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>1</y>
+        <z>1</z>
+      </scale>
+    </transform>
+  </gameObject>
+</root>

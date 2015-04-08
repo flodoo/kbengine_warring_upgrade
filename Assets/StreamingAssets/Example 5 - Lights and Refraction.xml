@@ -1,0 +1,61 @@
+<root name="Assets\NGUI\Examples\Scenes\Example 5 - Lights and Refraction.unity">
+  <gameObject name="renderSettings" fog="false" fogMode="3" fogDensity="0.01" fogStartDistance="0" fogEndDistance="300" fogColor_r="0.5" fogColor_g="0.5" fogColor_b="0.5" fogColor_a="1" ambientLight_r="0.2" ambientLight_g="0.2" ambientLight_b="0.2" ambientLight_a="1" haloStrength="0.5" flareStrength="1" skybox="" />
+  <gameObject name="world" wname="Example 5 - Lights and Refraction" />
+  <gameObject name="Objects" id="34" layer="kbentity" loadPri="99" load="0" unload="0" asset="streaming_Example_5_-_Lights_and_Refraction_Objects.33.unity3d">
+    <transform>
+      <position>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </position>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>1</y>
+        <z>1</z>
+      </scale>
+    </transform>
+  </gameObject>
+  <gameObject name="3D UI" id="36" layer="kbentity" loadPri="99" load="0" unload="0" asset="streaming_Example_5_-_Lights_and_Refraction_3D_UI.35.unity3d">
+    <transform>
+      <position>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </position>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>0.0025</x>
+        <y>0.0025</y>
+        <z>0.0025</z>
+      </scale>
+    </transform>
+  </gameObject>
+  <gameObject name="Main Camera" id="38" layer="kbentity" loadPri="99" load="0" unload="0" asset="streaming_Example_5_-_Lights_and_Refraction_Main_Camera.37.unity3d">
+    <transform>
+      <position>
+        <x>0</x>
+        <y>0</y>
+        <z>-1.5</z>
+      </position>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>1</y>
+        <z>1</z>
+      </scale>
+    </transform>
+  </gameObject>
+</root>

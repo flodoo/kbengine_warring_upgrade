@@ -1,0 +1,42 @@
+<root name="Assets\NGUI\Examples\Scenes\Example 8 - Scroll View (Camera).unity">
+  <gameObject name="renderSettings" fog="false" fogMode="3" fogDensity="0.01" fogStartDistance="0" fogEndDistance="300" fogColor_r="0.5" fogColor_g="0.5" fogColor_b="0.5" fogColor_a="1" ambientLight_r="0.2" ambientLight_g="0.2" ambientLight_b="0.2" ambientLight_a="1" haloStrength="0.5" flareStrength="1" skybox="" />
+  <gameObject name="world" wname="Example 8 - Scroll View (Camera)" />
+  <gameObject name="View UI" id="46" layer="Default" loadPri="99" load="0" unload="0" asset="streaming_Example_8_-_Scroll_View_(Camera)_View_UI.45.unity3d">
+    <transform>
+      <position>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </position>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>0.0025</x>
+        <y>0.0025</y>
+        <z>0.0025</z>
+      </scale>
+    </transform>
+  </gameObject>
+  <gameObject name="2D UI" id="48" layer="ui" loadPri="99" load="0" unload="0" asset="streaming_Example_8_-_Scroll_View_(Camera)_2D_UI.47.unity3d">
+    <transform>
+      <position>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </position>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>0.0025</x>
+        <y>0.0025</y>
+        <z>0.0025</z>
+      </scale>
+    </transform>
+  </gameObject>
+</root>
