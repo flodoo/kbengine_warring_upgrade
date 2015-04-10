@@ -1,0 +1,137 @@
+<root>
+	<Properties>
+		<HP>
+			<Type>			HP				</Type>
+			<Utype>			47001				</Utype>
+			<Flags>			ALL_CLIENTS			</Flags>
+			<Persistent>	true					</Persistent> 
+			<Default>		0				</Default>
+		</HP>
+
+		<HP_Max>
+			<Type>			HP				</Type>
+			<Utype>			47002				</Utype>
+			<Flags>			ALL_CLIENTS			</Flags>
+			<Default>		0				</Default>
+		</HP_Max>
+
+		<MP>
+			<Type>			HP				</Type>
+			<Utype>			47003				</Utype>
+			<Flags>			ALL_CLIENTS			</Flags>
+			<Persistent>	true					</Persistent> 
+			<Default>		0				</Default>
+		</MP>
+
+		<MP_Max>
+			<Type>			HP				</Type>
+			<Utype>			47004				</Utype>
+			<Flags>			ALL_CLIENTS			</Flags>
+			<Default>		0				</Default>
+		</MP_Max>
+		
+		<_PhyAtack>
+			<Type>			UINT32				</Type>
+			<Utype>			60001				</Utype>
+			<Flags>			CELL_PRIVATE			</Flags>
+			<Default>		0				</Default>
+		</_PhyAtack>
+		
+		<_MagicAtack>
+			<Type>			UINT32				</Type>
+			<Utype>			60002				</Utype>
+			<Flags>			CELL_PRIVATE			</Flags>
+			<Default>		0				</Default>
+		</_MagicAtack>
+		
+		<_PhyDef>
+			<Type>			UINT32				</Type>
+			<Utype>			60003				</Utype>
+			<Flags>			CELL_PRIVATE			</Flags>
+			<Default>		0				</Default>
+		</_PhyDef>
+		
+		<_MagicDef>
+			<Type>			UINT32				</Type>
+			<Utype>			60004				</Utype>
+			<Flags>			CELL_PRIVATE			</Flags>
+			<Default>		0				</Default>
+		</_MagicDef>
+		
+		<PhyAtack>
+			<Type>			UINT32				</Type>
+			<Utype>			60005				</Utype>
+			<Flags>			OWN_CLIENT			</Flags>
+			<Default>		0				</Default>
+		</PhyAtack>
+		
+		<MagicAtack>
+			<Type>			UINT32				</Type>
+			<Utype>			60006				</Utype>
+			<Flags>			OWN_CLIENT			</Flags>
+			<Default>		0				</Default>
+		</MagicAtack>
+		
+		<PhyDef>
+			<Type>			UINT32				</Type>
+			<Utype>			60007				</Utype>
+			<Flags>			OWN_CLIENT			</Flags>
+			<Default>		0				</Default>
+		</PhyDef>
+		
+		<MagicDef>
+			<Type>			UINT32				</Type>
+			<Utype>			60008				</Utype>
+			<Flags>			OWN_CLIENT			</Flags>
+			<Default>		0				</Default>
+		</MagicDef>
+		
+	</Properties>
+
+	<CellMethods>
+		<addHP>
+			<Arg>			HP				</Arg>
+		</addHP>
+
+		<addMP>
+			<Arg>			MP				</Arg>
+		</addMP>
+
+		<setHP>
+			<Arg>			HP				</Arg>
+		</setHP>
+
+		<setMP>
+			<Arg>			MP				</Arg>
+		</setMP>
+
+		<setHPMax>
+			<Arg>			HP				</Arg>
+		</setHPMax>
+
+		<setMPMax>
+			<Arg>			MP				</Arg>
+		</setMPMax>
+		
+		<setPysAttackMax>
+			<Arg>			UINT32				</Arg>
+		</setPysAttackMax>
+		
+		<setPysDefMax>
+			<Arg>			UINT32				</Arg>
+		</setPysDefMax>
+		
+		<setMagicAttackMax>
+			<Arg>			UINT32				</Arg>
+		</setMagicAttackMax>
+		
+		<setMagicDefMax>
+			<Arg>			UINT32				</Arg>
+		</setMagicDefMax>
+		
+		<calculateHM_Max>
+		</calculateHM_Max>
+		
+	</CellMethods>
+</root>
+

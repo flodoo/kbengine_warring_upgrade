@@ -1,0 +1,159 @@
+<root>
+	<Volatile>
+		<position/>
+		<!--<position> 0 </position> Don't update-->
+		<yaw/>
+		<!--<pitch> 20 </pitch>-->
+		<pitch/>
+		<roll/>
+	</Volatile>
+
+	<Implements>
+		<Interface>	GameObject		</Interface>
+		<Interface>	State			</Interface>
+		<Interface>	Flags			</Interface>
+		<Interface>	Motion			</Interface>
+		<Interface>	SkillBox		</Interface>
+		<Interface>	Combat			</Interface>
+		<Interface>	Spell			</Interface>
+		<Interface>	Teleport		</Interface>
+		<Interface>	Dialog			</Interface>
+	</Implements>
+
+	<Properties>
+		<roleType>
+			<Type>	UINT8	</Type>
+			<Flags>	BASE		</Flags>
+			<Persistent>		true				</Persistent>
+		</roleType>
+
+		<level>
+			<Utype> 41002 </Utype>
+			<Type>			UINT16				</Type>
+			<Flags>			CELL_PUBLIC_AND_OWN		</Flags>
+			<Default>		1				</Default>
+			<Persistent>		true				</Persistent>
+		</level>
+		
+		<Exp>
+			<Utype> 42005 </Utype>
+			<Type>			UINT64				</Type>
+			<Flags>			CELL_PUBLIC_AND_OWN		</Flags>
+			<Default>		0				</Default>
+			<Persistent>		true				</Persistent>
+		</Exp>
+
+		<own_val>
+			<Type>			UINT16				</Type>
+			<Flags>			OWN_CLIENT			</Flags>
+		</own_val>
+		
+		<BagItemList>
+			<Utype> 60009 </Utype>
+			<Type> ARRAY <of> BagItem </of> </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Persistent> true </Persistent>
+		</BagItemList>
+		
+		<EquipmentList>
+			<Utype> 60010 </Utype>
+			<Type> ARRAY <of> BagItem </of> </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Persistent> true </Persistent>
+		</EquipmentList>
+		
+		<maxItemsCount>
+			<Type>			UINT64				</Type>
+			<Flags>			BASE		</Flags>
+			<Default>		1				</Default>
+			<Persistent>		true				</Persistent>
+		</maxItemsCount>
+	</Properties>
+
+	<BaseMethods>
+		<createCell>
+			<Arg>		MAILBOX		</Arg>
+		</createCell>
+		<setBagItemPos>
+			<Exposed/>
+			<Arg>		UINT64		</Arg>
+			<Arg>		UINT8		</Arg>
+			<Arg>		UINT16		</Arg>
+		</setBagItemPos>
+		<rePlaceBagItemPos>
+			<Exposed/>
+			<Arg>		UINT64		</Arg>
+			<Arg>		UINT64		</Arg>
+		</rePlaceBagItemPos>
+		<DropBagItem>
+			<Exposed/>
+			<Arg>		UINT64		</Arg>
+		</DropBagItem>
+		<pickUpResponse>
+			<Exposed/>
+			<Arg>		UINT32		</Arg>
+			<Arg>		BagItem		</Arg>
+		</pickUpResponse>
+		<ItemUse>
+			<Exposed/>
+			<Arg>		UINT64		</Arg>
+		</ItemUse>
+		<EquipItem>
+			<Exposed/>
+			<Arg>		UINT64		</Arg>
+			<Arg>		UINT8		</Arg>
+		</EquipItem>
+	</BaseMethods>
+
+	<CellMethods>
+		<relive>
+			<Exposed/>
+			<Arg>		UINT8		</Arg>
+		</relive>
+		
+		<dropNotify>
+			<Exposed/>
+			<Arg>		BagItem		</Arg>
+		</dropNotify>
+		
+		<pickUpRequest>
+			<Exposed/>
+			<Arg>		UINT32		</Arg>
+		</pickUpRequest>
+		
+		<pickUpResponse>
+			<Exposed/>
+			<Arg>		UINT8		</Arg>
+			<Arg>		UINT32		</Arg>
+		</pickUpResponse>
+		
+		<ItemUse>
+			<Exposed/>
+			<Arg>		BagItem		</Arg>
+		</ItemUse>
+		
+		<EquipNotify>
+			<Exposed/>
+			<Arg>		BagItem		</Arg>
+		</EquipNotify>
+
+		<jump>
+			<Exposed/>
+		</jump>
+	</CellMethods>
+
+	<ClientMethods>
+		<onJump>
+		</onJump>
+		<onAddBagItem>
+			<Arg>		BagItem		</Arg>
+		</onAddBagItem>
+		<onDelBagItem>
+			<Arg>		UINT64		</Arg>
+		</onDelBagItem>
+		<onEquiptedItem>
+			<Arg>		BagItem		</Arg>
+		</onEquiptedItem>
+	</ClientMethods>
+</root>
+

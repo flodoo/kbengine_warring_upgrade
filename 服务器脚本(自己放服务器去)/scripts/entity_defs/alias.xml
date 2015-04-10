@@ -1,0 +1,199 @@
+<root>
+	<OBJECT_ID>			INT32		</OBJECT_ID>
+	<BOOL>				UINT8		</BOOL>
+	<CONTROLLER_ID>		INT32		</CONTROLLER_ID>
+	<EXPERIENCE>		INT32		</EXPERIENCE>
+	<ITEM_ID>			INT32		</ITEM_ID>
+	<SKILLID>			INT32		</SKILLID>
+	<QUESTID>			INT32		</QUESTID>
+	<DBID>				UINT64		</DBID>
+	<UID>				INT64		</UID>
+	<UID1>				PYTHON		</UID1>	
+	<ENTITY_ID>			INT32		</ENTITY_ID>
+	<ENTITY_NO>			UINT32		</ENTITY_NO>
+	<SPACE_ID>			UINT32		</SPACE_ID>
+	<POSITION3D>		VECTOR3		</POSITION3D>
+	<DIRECTION3D>		VECTOR3		</DIRECTION3D>
+	<ENTITY_UTYPE>		UINT32		</ENTITY_UTYPE>
+	
+	<DAMAGE_TYPE>		INT32		</DAMAGE_TYPE>
+	<ENMITY>			DAMAGE_TYPE	 </ENMITY>
+	<HP>				INT32		</HP>
+	<MP>				INT32		</MP>
+	
+	<ENTITY_STATE> INT8		</ENTITY_STATE>
+	<ENTITY_SUBSTATE> UINT8	</ENTITY_SUBSTATE>
+	<ENTITY_FORBIDS> INT32	</ENTITY_FORBIDS>
+	<ENTITY_FORBID_COUNTER> ARRAY <of> INT8 </of>	</ENTITY_FORBID_COUNTER>
+	
+	<ENTITYID_LIST> ARRAY <of> ENTITY_ID </of>	</ENTITYID_LIST>
+	
+	<AVATAR_DATA>	FIXED_DICT
+		<implementedBy>AVATAR_DATA.inst</implementedBy>
+		<Properties>
+			<param1>
+				<Type>	INT8	</Type>
+			</param1>
+			<param2>
+				<Type>	BLOB	</Type>
+			</param2>
+		</Properties>
+	</AVATAR_DATA>	
+	
+	<AVATAR_INFOS>	FIXED_DICT
+		<implementedBy>AVATAR_INFOS.avatar_info_inst</implementedBy>
+		<Properties>
+			<dbid>
+				<Type>	DBID	</Type>
+			</dbid>
+			<name>
+				<Type>	UNICODE	</Type>
+			</name>
+			<roleType>
+				<Type>	UINT8	</Type>
+			</roleType>
+			<level>
+				<Type>	UINT16	</Type>
+			</level>
+			<data>
+				<Type>	AVATAR_DATA	</Type>
+			</data>
+		</Properties>
+	</AVATAR_INFOS>	
+	
+	<AVATAR_INFOS_LIST>	FIXED_DICT
+		<implementedBy>AVATAR_INFOS.avatar_info_list_inst</implementedBy>
+		<Properties>
+			<values>
+				<Type>	ARRAY <of> AVATAR_INFOS </of>	</Type>
+			</values>
+		</Properties>
+	</AVATAR_INFOS_LIST>
+
+	<BagItem>	FIXED_DICT
+		<implementedBy>BAGITEM.inst</implementedBy>
+		<Properties>
+			<serialnum>
+				<Type>	UINT64	</Type>
+			</serialnum>
+			<tableId>
+				<Type>	UINT32	</Type>
+			</tableId>
+			<bagFrameIndex>
+				<Type>	UINT8	</Type>
+			</bagFrameIndex>
+			<bagItemIndex>
+				<Type>	UINT16	</Type>
+			</bagItemIndex>
+			<count>
+				<Type>	UINT8	</Type>
+			</count>
+			<name>
+				<Type>	UNICODE	</Type>
+			</name>
+			<altnasIndex>
+				<Type>	UINT32	</Type>
+			</altnasIndex>
+			<icon>
+				<Type>	UINT32	</Type>
+			</icon>
+			<modelId>
+				<Type>	UINT32	</Type>
+			</modelId>
+			<stdMode>
+				<Type>	UINT8	</Type>
+			</stdMode>
+			<weight>
+				<Type>	UINT8	</Type>
+			</weight>
+			<func>
+				<Type>	UINT8	</Type>
+			</func>
+			<PA1>
+				<Type>	UINT16	</Type>
+			</PA1>
+			<PA2>
+				<Type>	UINT16	</Type>
+			</PA2>
+			<MA1>
+				<Type>	UINT16	</Type>
+			</MA1>
+			<MA2>
+				<Type>	UINT16	</Type>
+			</MA2>
+			<PD1>
+				<Type>	UINT16	</Type>
+			</PD1>
+			<PD2>
+				<Type>	UINT16	</Type>
+			</PD2>
+			<MD1>
+				<Type>	UINT16	</Type>
+			</MD1>
+			<MD2>
+				<Type>	UINT16	</Type>
+			</MD2>
+			<HP>
+				<Type>	UINT32	</Type>
+			</HP>
+			<MP>
+				<Type>	UINT32	</Type>
+			</MP>
+			<Accurate>
+				<Type>	UINT8	</Type>
+			</Accurate>
+			<lucky>
+				<Type>	UINT8	</Type>
+			</lucky>
+			<holiness>
+				<Type>	UINT8	</Type>
+			</holiness>
+			<HPgen>
+				<Type>	UINT8	</Type>
+			</HPgen>
+			<MPgen>
+				<Type>	UINT8	</Type>
+			</MPgen>
+			<crit>
+				<Type>	UINT8	</Type>
+			</crit>
+			<need>
+				<Type>	UINT8	</Type>
+			</need>
+			<needLevel>
+				<Type>	UINT8	</Type>
+			</needLevel>
+			<price>
+				<Type>	UINT32	</Type>
+			</price>
+			<stock>
+				<Type>	UINT8	</Type>
+			</stock>
+			<script>
+				<Type>	UNICODE	</Type>
+			</script>
+		</Properties>
+	</BagItem>
+	
+	<BAG>	FIXED_DICT
+		<Properties>
+			<values22>
+				<Type>	ARRAY <of> ARRAY <of>INT64 </of></of>	</Type>
+			</values22>
+		</Properties>
+	</BAG>	
+	
+	<EXAMPLES>	FIXED_DICT
+		<Properties>
+			<k1>
+				<Persistent>	false	</Persistent>
+				<Type>	INT64	</Type>
+			</k1>
+			
+			<k2>
+				<Type>	INT64	</Type>
+			</k2>
+		</Properties>
+	</EXAMPLES>	
+	
+</root>

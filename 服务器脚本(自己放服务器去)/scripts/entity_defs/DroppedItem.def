@@ -1,0 +1,33 @@
+<root>
+	<Volatile>
+		<position/>
+		<yaw/>
+		<!--<pitch> 20 </pitch>-->
+	</Volatile>
+
+	<Implements>
+		<Interface>	GameObject		</Interface>
+	</Implements>
+
+	<Properties>
+		<bagItemData>
+			<Type>			BagItem				</Type>
+			<Flags>			ALL_CLIENTS		</Flags>
+		</bagItemData>
+		<pickerID>
+			<Type>			UINT32				</Type>
+			<Flags>			CELL_PRIVATE		</Flags>
+			<Default>		0				</Default>
+		</pickerID>
+	</Properties>
+
+	<CellMethods>
+		<pickUpRequest>
+			<Arg>		UINT32		</Arg>
+		</pickUpRequest>
+		<isPicked>
+			<Arg>		UINT8		</Arg>
+		</isPicked>
+	</CellMethods>
+</root>
+
